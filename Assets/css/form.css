@@ -1,0 +1,15 @@
+main {
+  display: flex;
+}
+
+main section {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 5px black solid;
+  height: 500px;
+}
+
+.title {
+}
