@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="reset" href="/Assets/css/reset.css">
-    <link rel="stylesheet-all" href="./Assets/css/styles.css">
-    <link rel="stylesheet-landing" href="./Assets/css/form.css">
-</head>
-<body>
+    <link rel="reset" href="/Assets/css/reset.css" />
+    <link rel="stylesheet-all" href="./Assets/css/styles.css" />
+    <link rel="stylesheet-landing" href="./Assets/css/form.css" />
+  </head>
+  <body>
+    <header></header>
+    <hr />
+    <main>
+      <section>
+        <h1>My First Blog</h1>
+      </section>
+      <section>
+        <h3>What's on your mind?</h3>
+        <form action="">
+          <label for="Username">Username:</label><br />
+          <input type="text" id="username" name="username" value="" /><br />
+          <label for="post-title">Post Title:</label><br />
+          <input type="text" id="post-title" name="title" value="" /><br />
+          <label for="post-content">Content:</label><br />
+          <input
+            type="text"
+            id="post-content"
+            name="content"
+            value=""
+          /><br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
     <script src="./Assets/js/logic.js"></script>
     <script src="./Assets/js/form.js"></script>
-</body>
+  </body>
 </html>
