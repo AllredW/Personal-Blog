@@ -13,3 +13,9 @@ main section {
 
 .title {
 }
+
+form {
+  display: flex;
+  margin: 10px;
+  width: 40%;
+}
