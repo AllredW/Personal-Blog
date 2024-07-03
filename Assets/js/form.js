@@ -7,7 +7,7 @@ const contentInput = document.querySelector("#post-content");
 // function: convert form inputs into an object
 const postSubmit = function (event) {
   event.preventDefault();
-//   empty fields = alert message
+  //   empty fields = alert message
   if (
     nameInput.value == "" ||
     titleInput.value == "" ||
@@ -22,9 +22,13 @@ const postSubmit = function (event) {
     title: titleInput.value.trim(),
     content: contentInput.value.trim(),
   };
-  console.log(blogPost.username);
-  console.log(blogPost.title);
-  console.log(blogPost.content);
+
+  postStore(blogPost);
+
+  //   test commands: confirm blogPost object
+  //   console.log(blogPost.username);
+  //   console.log(blogPost.title);
+  //   console.log(blogPost.content);
 };
 
 postForm.addEventListener("submit", postSubmit);
@@ -32,18 +36,43 @@ postForm.addEventListener("submit", postSubmit);
 // storage array
 const posts = [];
 
+// testcommand: confirm posts array exists
+// console.log(posts);
+
 // function: push the object into an array
-const postStore = function (){
+const postStore = function (data) {
+  const blogs = localStore();
+  // push object to array
 
+  // console.log(blogs)
 
-// push object to array
-    posts.push(blogPost);
+  blogs.push(data);
 
-    console.log(posts);
+  // stringify array for storage
+  const stringArray = JSON.stringify(blogs);
 
-        // condenses array into a string
-        localStorage.setItem('posts', JSON.stringify(posts));
-}
+  // test
+  console.log(stringArray);
 
+  // push stringArray to localStorage
+  localStorage.setItem("posts", stringArray);
 
+  // test command: confirm blogPost object is inside posts array
+  // console.log(posts);
+};
 
+const localStore = function () {
+  // pull posts from LocalStorage
+  const storeData = localStorage.getItem("posts");
+
+  // check for blank values, creates a blank array if one is not already in localStorage
+  if (storeData) {
+    // parse data from string
+    const parseArray = JSON.parse(storeData);
+
+    // display parseArray on page
+    return parseArray;
+  } else {
+    return [];
+  }
+};
