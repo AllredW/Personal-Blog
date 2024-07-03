@@ -9,13 +9,12 @@ main section {
   justify-content: center;
   border: 5px black solid;
   height: 500px;
-}
-
-.title {
+  flex-direction: column;
 }
 
 form {
   display: flex;
   margin: 10px;
   width: 40%;
+  flex-direction: column;
 }

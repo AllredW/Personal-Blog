@@ -1,25 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/blog.css">
-</head>
-<body>
-    <header></header>
-    <hr>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/blog.css" />
+  </head>
+  <body>
+    <div class="container dark">
+    <header>
+      <div class="title">
+        <h1>My First Blog</h1>
+        <a href="./index.html"><button>⬅️ Post</button></a>
+      </div>
+      <div class="row toggle">
+        <div class="col">
+          <p>&#127769;</p>
+        </div>
+        <label class="switch col">
+          <input type="checkbox" id="theme-switcher" />
+          <span class="slider round"></span>
+        </label>
+        <div class="col">
+          <p>&#9728;&#65039;</p>
+        </div>
+      </div>
+    </header>
+    <hr />
     <main>
-       
+       <div class = blog-post> 
+      <h3>post username</h3>
+      <h4>post title</h4>
+        <article>post content</article>
+    </div>
     </main>
     <footer>
-        <p>
-            This blog is made by <a href="https://allredw.github.io/portfolio-01/">William Allred</a>
-        </p>
+      <p>
+        This blog is made by
+        <a href="https://allredw.github.io/portfolio-01/">William Allred</a>
+      </p>
     </footer>
     <script src="./assets/js/logic.js"></script>
     <script src="./assets/js/blog.js"></script>
-</body>
+</div>
+  </body>
 </html>
