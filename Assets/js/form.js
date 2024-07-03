@@ -29,6 +29,7 @@ const postSubmit = function (event) {
   //   console.log(blogPost.username);
   //   console.log(blogPost.title);
   //   console.log(blogPost.content);
+  location.href="./blog.html";
 };
 
 postForm.addEventListener("submit", postSubmit);
@@ -51,9 +52,6 @@ const postStore = function (data) {
   // stringify array for storage
   const stringArray = JSON.stringify(blogs);
 
-  // test
-  console.log(stringArray);
-
   // push stringArray to localStorage
   localStorage.setItem("posts", stringArray);
 
@@ -61,18 +59,4 @@ const postStore = function (data) {
   // console.log(posts);
 };
 
-const localStore = function () {
-  // pull posts from LocalStorage
-  const storeData = localStorage.getItem("posts");
 
-  // check for blank values, creates a blank array if one is not already in localStorage
-  if (storeData) {
-    // parse data from string
-    const parseArray = JSON.parse(storeData);
-
-    // display parseArray on page
-    return parseArray;
-  } else {
-    return [];
-  }
-};

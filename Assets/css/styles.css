@@ -21,6 +21,12 @@ h1 {
 hr {
 }
 
+footer {
+  background-color: white;
+  border: 5px black solid;
+  height: 10%;
+}
+
 /* light/dark toggle elements */
 /* Styling the Switch button */
 .switch {
@@ -101,6 +107,7 @@ input:checked + .slider:before {
   background-color: #243447;
   height: 100vh;
   color: #bebebe;
+  
 }
 
 .dark header {

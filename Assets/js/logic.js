@@ -20,3 +20,19 @@ themeSwitcher.addEventListener('click', function () {
   }
 });
 
+// function: unpacks posts array from localStorage
+const localStore = function () {
+  // pull posts from LocalStorage
+  const storeData = localStorage.getItem("posts");
+
+  // check for blank values, creates a blank array if one is not already in localStorage
+  if (storeData) {
+    // parse data from string
+    const parseArray = JSON.parse(storeData);
+
+    // display parseArray on page
+    return parseArray;
+  } else {
+    return [];
+  }
+};

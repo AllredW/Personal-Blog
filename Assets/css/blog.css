@@ -1,9 +1,3 @@
-footer {
-    background-color: white;
-    border: 5px black solid;
-    height: 150px;
-}
-
 .blog-display {
     display: flex;
     list-style: none;
@@ -12,7 +6,12 @@ footer {
 .blog-post {
     display: flex;
     margin: 20px;
+    padding: 20px;
     height: 150px;
     border: 5px solid black;
     flex-direction: column;
+}
+
+.blog-post h3 {
+    margin-bottom: 0;
 }
