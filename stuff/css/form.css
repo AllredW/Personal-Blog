@@ -9,8 +9,8 @@ main section {
   align-items: center;
   justify-content: center;
   border: 5px black solid;
-
   flex-direction: column;
+  height: 70vh;
 }
 
 form {

@@ -1,6 +1,7 @@
 .blog-display {
     display: flex;
-    list-style: none;
+flex-direction: column;
+height: fit-content;
 }
 
 .blog-post {

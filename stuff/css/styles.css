@@ -1,11 +1,16 @@
 /* Header elements, cross pages */
 header {
   display: flex;
-  background-color: white;
   border: 5px black solid;
   height: 150px;
   justify-content: space-between;
   align-items: center;
+}
+
+footer {
+  display: flex;
+  border: 5px black solid;
+  height: 150px;
 }
 
 /* header elements */
@@ -16,15 +21,6 @@ h1 {
 .title {
   align-items: center;
   text-align: center;
-}
-
-hr {
-}
-
-footer {
-  background-color: white;
-  border: 5px black solid;
-  height: 10%;
 }
 
 /* light/dark toggle elements */
@@ -105,12 +101,12 @@ input:checked + .slider:before {
 /* Dark Mode */
 .dark {
   background-color: #243447;
-  height: 100vh;
+  height: fit-content;
   color: #bebebe;
   
 }
 
-.dark header {
+/* .dark header {
   background-color: #243447;
   color: #bebebe;
 }
@@ -118,16 +114,16 @@ input:checked + .slider:before {
 .dark footer {
   background-color: #243447;
   color: #bebebe;
-}
+} */
 
 /* Light Mode */
 .light {
   background-color: #f0ead6;
   color: black;
-  height: 100vh;
+  height: fit-content;
 }
 
-.light header {
+/* .light header {
   background-color: #f0ead6;
   color: black;
 }
@@ -135,4 +131,4 @@ input:checked + .slider:before {
 .light footer {
   background-color: #f0ead6;
   color: black;
-}
+} */
