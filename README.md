@@ -13,13 +13,15 @@ An online application that allows the user to create blog posts, which are store
 ## Usage
 
 <!-- Add screenshots using the following format: -->
-![An example of this application in use](./assets/images/Payroll-tracker-thumb.png)
+![An example of the form page for this app](./assets/images/Blog%20Thumb%201.png)
+
+![An example of the blog page for this app](./assets/images/Blog%20Thumb%202.png)
 
 ## Contact
 
 [William Allred](https://github.com/AllredW) - allrewil@gmail.com
 
-[Deployment](https://allredw.github.io/Employee-Payroll-Tracker/)
+[Deployment](https://allredw.github.io/Personal-Blog/)
 
 ## Contributing
 
